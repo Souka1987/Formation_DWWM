@@ -1,0 +1,402 @@
+/*DOCUMENT INFORMATION
+    Document : Thème endives
+    Version : 1.0.0
+    Auteur : Souka
+*/
+
+/* COLORS
+    - defaut body text #eee
+    - h1 brown
+    - h2 chocolate
+    - h3 crimson
+
+    - button
+    - button:hover
+
+    - icon        darkorange
+
+    - border
+
+    */
+
+/*FONTS
+    - default  Roboto
+    - subtitle
+*/
+
+/* CSS DIRECTORY
+    - 1.= GLOBAL
+    - 2.= HEADER
+    - 3 = PRODUITS
+*/
+
+/* GLOBAL
+====================================== */
+
+html {
+    background-color: white;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto' sans-serif, tahoma;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 600;
+    word-spacing: 8px;
+
+}
+h1 {
+    color: brown;
+    letter-spacing: -1px;
+    font-weight: 400;
+    word-spacing: 8px;
+
+}
+h2 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: crimson; 
+    width: 100px;
+    content:"";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+
+p {
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+/* HEADER
+======================================*/
+
+.centercolum {
+
+    padding: 25px 0px;
+    /*Marge verticale*/
+    /*couleur de fond*/
+    text-align: center;
+    /*texte centré*/
+}
+
+header {
+    background-image: linear-gradient(rgba(190, 176, 41, 0.568), rgba(25, 46, 160, 0.726)),
+                      url(../images/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.home-title {
+    position: absolute;
+    top: 30%;
+    width: auto;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: white;
+}
+
+.home-title h1 span {
+    font-weight: 700;
+}
+
+.home-title p {
+    color: white;
+
+}
+
+
+/*button*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+   
+}
+
+.btn-full {
+    background-color: greenyellow;
+    color: white;
+    margin:15px;
+    
+}
+
+.btn-ghost {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-full:hover {
+    background-color: goldenrod;
+    color: rgb(2, 2, 2);
+}
+
+.btn-ghost:hover {
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    color: white;
+}
+
+/* PRODUITS
+======================================*/
+
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon{
+    color: grey;
+    transform: translateX(20px);
+}
+
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: rgb(197, 169, 75);
+    transition: all 1s;
+}
+
+/* FAMILLE ENDIVES
+======================================*/
+.famille-endives {
+    background-color: wheat;
+}
+
+.famille-details {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background-color: tomato;
+    margin-bottom: 20px;
+}
+
+.famille-details img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+/* GALERIE PHOTOS
+======================================*/
+.galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+.galeries-titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    
+}
+
+.galeries-titre h4 {
+    color: white;
+}
+
+/* CLIENTS
+======================================*/
+
+.clients {
+    background-image: linear-gradient(rgba(255, 238, 0, 0.5), rgba(43, 48, 128, 0.815)),
+    url(../images/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color: white;
+}
+
+.clients h2::after {
+    background-color: white;
+}
+
+
+blockquote {
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: white;
+}
+
+blockquote ::before {
+    content: "\0022";
+    font-size: 70px;
+    font-family: 'Sanchez', serif;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: rgba(235, 235, 235, 0.3);
+}
+
+cite {
+    font-size: 15px;
+    display: block;
+    margin: 20px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* PACKS
+======================================*/
+
+.pack {
+    box-shadow: 0 0  10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background-color: salmon;
+    color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+        
+}
+.pack h3 {
+    color: black;
+}
+
+.pack h4 {
+    font-size: 80%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 70%;
+    position: relative;
+    top: -5px;
+    left: 2px;
+}
+
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid lightsalmon;
+
+}
+
+.pack-title-nosplats {
+
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: white;
+    color: tomato;
+    border-radius: 18px;
+    padding: 5px;
+
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+.pack-signup {
+    text-align: center;
+}
+.btn-pack {
+    background-color:crimson;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* CONTACT
+======================================*/
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-full {
+    background-color:crimson;
+    color: white;
+}
+
+.map{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER
+======================================*/
+
+footer{
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: brown;
+}
