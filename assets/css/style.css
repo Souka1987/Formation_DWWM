@@ -1,0 +1,191 @@
+/*
+ * Css-grid By Suka
+ */
+
+/*Default*/
+
+body {padding: 0;margin: 0;}
+li{list-style: none;}
+
+/* Flex*/
+.row{display: flex;}
+.col{display:flex;flex-direction: column;}
+
+.item{padding:5px; margin:5px;}
+/**********************************/
+
+/* GRID
+ ************/
+
+/* Grid Body */
+.nav-bar {grid-area: nav;}
+.welcome {grid-area: welcome;}
+.card-section {grid-area: card;}
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+}
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+} 
+h3 {
+    text-align: center;
+    color: white;
+}  
+h4 {
+    text-align: center;
+    color: white;
+}    
+p{
+    text-align: center;
+    font-size: medium;
+    font: arial;
+}
+label {
+    color: white;
+}
+
+#grid > header{grid-area: head;}
+#grid > nav{grid-area: nav;}
+#grid > form{grid-area: form;}
+#grid > footer{grid-area:foo;}
+
+#grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 20% 20% 10% 10% 20% 20%;
+  grid-template-rows: 7vh 200px 1fr 50px;
+  grid-template-areas: "nav nav nav nav nav nav"
+                       "head head head head head head"
+                       "form form form form form form"
+                       "foo foo foo foo foo foo";
+}
+
+
+/* Grid header */
+
+nav > h2 {grid-area: t-nav;}
+nav > ul {grid-area: ul-nav;}
+
+.item{
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.nav-bar {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 20% 20% 10% 10% 10% 10% 20%;
+    grid-template-rows: 7vh;
+    text-transform: uppercase;
+    text-decoration: none;
+    grid-template-areas: "t-nav . . . . ul-nav ul-nav";
+    border: solid 2px yellowgreen;
+    background-color: blue;
+}
+
+
+/* Grid Welcome */
+header {
+    border: solid 2px yellowgreen;
+    margin-top: 5px;
+    background-color: darkblue;
+
+}
+h1 {color: white;}
+p {color: white;}
+.grid-container{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-areas: " .  . welcome  welcome . ";
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 20%);
+}
+
+/* Grid Card Section */
+.card-section {
+    border: solid 2px yellowgreen;
+    margin-top: 5px;
+    background-color: blueviolet;
+    background: linear-gradient(#783e9f, #03a9f4);
+    padding: 50px;
+    text-align: center;
+   
+    
+}
+.card1{grid-area: card1; border: solid 2px yellowgreen; background-color: cornflowerblue;}
+.card2{grid-area: card2; border: solid 2px yellowgreen; background-color: cornflowerblue;}
+.card3{grid-area: card3; border: solid 2px yellowgreen; background-color: cornflowerblue;}
+
+.card-list{
+    display: grid;
+    grid-gap: 1em;
+    width: 100%;
+    height: auto;
+    grid-template-areas: ".  card1 card2 card2 card3  ."
+                         ".  card1 card2 card2 card3  .";
+    grid-template-columns: 20% 20% 10% 10% 20% 20%;
+    grid-template-rows: 35px auto;
+}
+
+/*formulaire*/
+
+form > h3 {grid-area: t-form}
+form > .name  {grid-area: in-name}
+form > .mail  {grid-area: in-mail}
+form > input {grid-area: t-suj}
+form > textarea {grid-area: t-text}
+form > button {grid-area: t-btn}
+
+form {
+  display: grid;
+  margin-top: 5px;
+  background-color: navy;
+  border: solid 2px  greenyellow;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  grid-template-areas: ". . t-form t-form . ."
+                       ". . in-name  in-mail . ."
+                       ". . t-suj t-suj . ."
+                       ". . t-text t-text . ."
+                       ". . t-btn t-btn . ."
+  ;
+}
+
+
+/* Grid Footer 
+ ******************/
+
+.foo-contact {grid-area: foo-c;}
+.foo-sitemap {grid-area: foo-s;}
+.foo-news {grid-area: foo-n;}
+
+.footer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: lightseagreen;
+    border: solid 2px greenyellow;
+    grid-template-areas: " . foo-c foo-s foo-s foo-n ."
+                         " . foo-c foo-s foo-s foo-n .";
+    grid-template-rows: 35px auto;
+    grid-template-columns: 20% 20% 10% 10% 20% 20%;
+}
+
+/**********************************/
