@@ -1,0 +1,22 @@
+Nodejs avec interaction base données (ici, MongoDB):
+
+1 - Installer MongoDB, ne pas oublier de spécifier le chemin "database"
+2-  Robo 3t
+3-  Mongoose
+
+- Pour démarrer la la base de données MongoDB => faire sur le terminal "sudo mongod"
+- Pour les images voir la méthode "mutler" : https://www.npmjs.com/package/multer
+- Pour la mise à jour voir la méthode "methodOverride" : https://www.npmjs.com/package/method-override
+- Il est possible de changer le numéro du port
+- Faire démarrer son projet toujours avec nodemon app.js
+- voir méthode "extname"  https://nodejs.org/api/path.html#path_path_extname_path
+- Pour costumiser une image avec le module "sharp" : https://sharp.pixelplumbing.com/install
+- La méthode "populate()" sert à faire la liaison entre 2 collections.
+
+- Relier MongoDB avec le moteur de recherche Algolia : https://www.npmjs.com/package/mongoose-algolia +
+  npm i algoliasearch : https://www.npmjs.com/package/algoliasearch
+
+Dans le script, "cb" = callback, "path" = chemin.
+
+! Toujours vérifier la version d'handlebars. Et voir les autres fichiers
+se trouvant dans le json.
