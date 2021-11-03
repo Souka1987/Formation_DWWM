@@ -1,0 +1,58 @@
+<!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>com.android.tools.apk</id>
+  <name>Android APK Support</name>
+  <version>1.0</version>
+  <vendor>Google</vendor>
+  <depends>org.jetbrains.android</depends>
+  <depends>com.android.tools.ndk</depends>
+
+  <description>Provides Android APK support</description>
+  <idea-version since-build="145.597"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <writingAccessProvider implementation="com.android.tools.idea.apk.ApkWritingAccessProvider"/>
+  </extensions>
+
+  <project-components>
+    <component>
+      <implementation-class>com.android.tools.idea.apk.ApkProjectComponent</implementation-class>
+      <skipForDefaultProject/>
+    </component>
+  </project-components>
+
+  <extensions defaultExtensionNs="com.android">
+    <customProjectTypeImporter implementation="com.android.tools.idea.apk.ApkProjectImporter"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceImplementation="com.android.tools.idea.apk.symbols.DebugSymbolNotifications"/>
+    <projectService serviceImplementation="com.android.tools.idea.apk.LibraryUpdates"/>
+    <projectService serviceImplementation="com.android.tools.idea.apk.external.system.ApkSystemSettings"/>
+    <projectService serviceImplementation="com.android.tools.idea.apk.external.system.ApkSystemLocalSettings"/>
+    <projectService serviceImplementation="com.android.tools.idea.apk.issues.SetupIssueReporter"/>
+    <projectService serviceImplementation="com.android.tools.idea.apk.FileWatcherService"/>
+    <externalSystemManager implementation="com.android.tools.idea.apk.external.system.ApkSystemManager"/>
+
+    <toolWindow id="APK Project" anchor="right" icon="GradleIcons.ToolWindowGradle"
+                factoryClass="com.android.tools.idea.apk.ui.ApkImportToolWindowFactory"
+                conditionClass="com.android.tools.idea.apk.ui.ApkImportToolWindowFactoryCondition"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.apk.editor.notification.MissingDebugSymbolsNotificationProvider"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.apk.editor.notification.ApkReloadNotificationProvider"/>
+    <fileEditorProvider implementation="com.android.tools.idea.apk.editor.LibraryEditorProvider"/>
+  </extensions>
+</idea-plugin>
