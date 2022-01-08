@@ -8,7 +8,7 @@
 ![npm](https://img.shields.io/npm/v/bootstrap?color=purple&label=bootstrap&logo=bootstrap&logoColor=purple&style=social)
 ------
 
-> Site entièrement en HTML avec intégration du framwork CSS Bootstrap.
+> Site entièrement en HTML avec intégration du framwork CSS Bootstrap découpé en composants.
 
 
 ## Tech Stack
