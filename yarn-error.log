@@ -1,0 +1,31 @@
+Arguments: 
+  /home/souka/.nvm/versions/node/v17.3.0/bin/node /home/souka/.nvm/versions/node/v17.3.0/bin/yarn init
+
+PATH: 
+  /home/souka/.nvm/versions/node/v17.3.0/bin:/emulator:/tools:/home/souka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/souka/bin:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin:/usr/share/gradle/gradle-6.6/bin:/home/souka/Android/Sdk/tools:/home/souka/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/souka/Documents/Formation_DWWM/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /home/souka/.nvm/versions/node/v17.3.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/souka/.nvm/versions/node/v17.3.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/souka/.nvm/versions/node/v17.3.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

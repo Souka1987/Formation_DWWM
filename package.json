@@ -1,0 +1,22 @@
+{
+  "name": "phantomjs",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Souka1987/Formation_DWWM.git"
+  },
+  "author": "Soukainata Attoumani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Souka1987/Formation_DWWM/issues"
+  },
+  "homepage": "https://github.com/Souka1987/Formation_DWWM#readme"
+}
