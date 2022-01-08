@@ -8,7 +8,7 @@
 
 ------
 
->>> Découvrir le scrapping avec CasperJS 
+> Découvrir le scrapping avec CasperJS 
 
 ## Installation
 
