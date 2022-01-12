@@ -1,7 +1,5 @@
 <h1 align="center">Hi 👋</h1>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=souka1987&label=Profile%20views&color=ff1493&style=plastic" alt="souka1987" /> </p>
-
 - 💬 About : This repository includes all the work I did during my training as a web and mobile web developer.
 
 <h3 align="center">Languages and Technologies:</h3>
